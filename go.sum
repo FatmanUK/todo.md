@@ -1,0 +1,4 @@
+github.com/FatmanUK/fatgo/docopt_helpers v0.0.0-20251122102248-ec5cd0423188 h1:lOZMEows984yxcdiTTYV99qfk7BdXyQBDXgd+Vr2zgs=
+github.com/FatmanUK/fatgo/docopt_helpers v0.0.0-20251122102248-ec5cd0423188/go.mod h1:GMAnP7Z32VM/oug2uq6whw1d9w5CVDIcO3EZiS5gPik=
+github.com/docopt/docopt-go v0.0.0-20180111231733-ee0de3bc6815 h1:bWDMxwH3px2JBh6AyO7hdCn/PkvCZXii8TGj7sbtEbQ=
+github.com/docopt/docopt-go v0.0.0-20180111231733-ee0de3bc6815/go.mod h1:WwZ+bS3ebgob9U8Nd0kOddGdZWjyMGR8Wziv+TBNwSE=

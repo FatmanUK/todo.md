@@ -1,0 +1,21 @@
+VERSION=0.0.1
+
+ENVVARS=GOOS=@(OS) GOARCH=@(ARCH)
+
+LDFLAGS =-X main.VERSION=$(VERSION)
+LDFLAGS+=-X main.BUILD_MODE=@(BUILD_MODE)
+LDFLAGS+=-X main.APP_NAME=$(KV_BIN)
+LDFLAGS+=-X main.DATAPATH=@(DATAPATH)
+LDFLAGS+=@(EXTRA_LDFLAGS)
+
+APP_SRC=                   \
+	src/main.go        \
+	src/docopt.go      \
+	src/task.go        \
+	src/taskHelpers.go \
+	src/actions.go     \
+	src/buildVars.go
+
+: $(APP_SRC) \
+|> $(ENVVARS) go build -o %o -ldflags "$(LDFLAGS)" %f \
+|> @(BINOUT)
