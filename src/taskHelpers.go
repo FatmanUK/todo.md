@@ -7,6 +7,12 @@ import (
 	"io/ioutil"
 )
 
+/*
+vi /var/lib/dpkg/status
+Package: pika-baseos-minimal
+find nano in Depends and delete
+*/
+
 func getListFromFile(fn string) ([]string, error) {
 	listBytes, err := ioutil.ReadFile(fn)
 	if err != nil {
